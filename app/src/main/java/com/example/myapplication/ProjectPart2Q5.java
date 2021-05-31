@@ -9,18 +9,18 @@ public class ProjectPart2Q5 {
         int firstNumber = scanner.nextInt();
         System.out.print("Enter second number: ");
         int secondNumber = scanner.nextInt();
-        if (firstNumber >= 10 && secondNumber <= 50){
-            computeProduct(firstNumber, secondNumber);
-        }
-        else{
-            System.out.println("Not in range");
-        }
+        computeProduct(firstNumber, secondNumber);
+
     }
 
     public static void computeProduct(int first, int second) {
-        int product = first + second;
-        System.out.println("The product " + first + " and " + second + " is " +product);
+        if (10 <= first && first <=50 && 10<= second && second<=50){
+            int product = first * second;
+            System.out.println("The product " + first + " and " + second + " is " +product);
 
+        }
+        else
+            System.out.println("Not in range");
     }
 
 }
